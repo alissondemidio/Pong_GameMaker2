@@ -1,0 +1,29 @@
+# --------------------
+# GameMaker
+# --------------------
+*.yyz
+*.yymp
+*.cache
+*.tmp
+
+*.user
+*.users
+*.local
+
+/target/
+/output/
+/build/
+/builds/
+
+# --------------------
+# OS / Editor
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --------------------
+# Logs
+# --------------------
+*.log
