@@ -49,3 +49,14 @@ if (x < -32) {
     // Increment Player 2 score
     global.score_player_two++;
 }
+
+// Shift trail positions
+for (var i = trail_length - 1; i > 0; i--) {
+    trail_x[i] = trail_x[i - 1];
+    trail_y[i] = trail_y[i - 1];
+}
+
+trail_x[0] = x;
+trail_y[0] = y;
+
+

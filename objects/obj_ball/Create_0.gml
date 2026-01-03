@@ -14,6 +14,11 @@ direction = choose(
 	random_range(110, 240),
 	random_range(290, 330)
 );
+// Stop the ball temporarily
+speed = 0;
+// Set alarm to restart ball after 1 second (room_speed frames)
+alarm[0] = room_speed;
 
-// Set initial ball speed from global variable
-speed = global.ballspeed;
+trail_length = 8;
+trail_x = array_create(trail_length, x);
+trail_y = array_create(trail_length, y);
