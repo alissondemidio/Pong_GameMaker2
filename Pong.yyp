@@ -18,6 +18,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},"order":1,},
     {"id":{"name":"spr_eyeball","path":"sprites/spr_eyeball/spr_eyeball.yy",},"order":5,},
     {"id":{"name":"obj_start_button","path":"objects/obj_start_button/obj_start_button.yy",},"order":6,},
+    {"id":{"name":"obj_controls_display","path":"objects/obj_controls_display/obj_controls_display.yy",},"order":8,},
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},"order":2,},
     {"id":{"name":"obj_audio_controller","path":"objects/obj_audio_controller/obj_audio_controller.yy",},"order":5,},
     {"id":{"name":"rm_initial","path":"rooms/rm_initial/rm_initial.yy",},"order":2,},
