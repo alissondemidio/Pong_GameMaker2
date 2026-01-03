@@ -5,4 +5,4 @@
 // Play background music on loop (priority 0, loop = true)
 audio_play_sound(snd_background_music, 0, true);
 // Set volume to 80% (gain = 0.8, fade time = 0)
-audio_sound_gain(snd_background_music, 0.8, 0);
+audio_sound_gain(snd_background_music, 0.3, 0);

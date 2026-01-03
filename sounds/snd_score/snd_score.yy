@@ -12,7 +12,7 @@
   "sampleRate": 44100,
   "bitDepth": 1,
   "bitRate": 128,
-  "volume": 1.0,
+  "volume": 0.6,
   "preload": false,
   "soundFile": "snd_score.wav",
   "duration": 1.734739,
