@@ -16,3 +16,6 @@ global.number_of_players = 1;   // Number of players (1 = single player, 2 = two
 
 // Game state
 global.game_over = false;      // Flag to track if game has ended
+
+// Mobile/touch detection
+global.is_mobile = scr_is_mobile();  // Detect if running on mobile/touch device
