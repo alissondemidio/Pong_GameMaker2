@@ -38,31 +38,55 @@ draw_set_font(-1); // Default font
 draw_text_outlined(start_x, start_y + y_offset, "CONTROLS:", c_yellow);
 y_offset += line_height + 5;
 
-// Draw controls based on number of players
-if (global.number_of_players == 1) {
-    // Single Player Mode
-    draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "W - Move Up", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "S - Move Down", c_white);
-    y_offset += line_height + 5;
-    draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "AI Controlled", c_white);
+// Draw controls based on device type and number of players
+if (global.is_mobile) {
+    // Mobile/Touch Controls
+    if (global.number_of_players == 1) {
+        // Single Player Mode (Mobile)
+        draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "Touch & Drag", c_white);
+        y_offset += line_height + 5;
+        draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "AI Controlled", c_white);
+    } else {
+        // Two Player Mode (Mobile)
+        draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "Touch & Drag Left", c_white);
+        y_offset += line_height + 5;
+        draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "Touch & Drag Right", c_white);
+    }
 } else {
-    // Two Player Mode
-    draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "W - Move Up", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "S - Move Down", c_white);
-    y_offset += line_height + 5;
-    draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "UP Arrow - Move Up", c_white);
-    y_offset += line_height;
-    draw_text_outlined(start_x + 15, start_y + y_offset, "DOWN Arrow - Move Down", c_white);
+    // Desktop/Keyboard Controls
+    if (global.number_of_players == 1) {
+        // Single Player Mode
+        draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "W - Move Up", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "S - Move Down", c_white);
+        y_offset += line_height + 5;
+        draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "AI Controlled", c_white);
+    } else {
+        // Two Player Mode
+        draw_text_outlined(start_x, start_y + y_offset, "Player 1 (Left):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "W - Move Up", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "S - Move Down", c_white);
+        y_offset += line_height + 5;
+        draw_text_outlined(start_x, start_y + y_offset, "Player 2 (Right):", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "UP Arrow - Move Up", c_white);
+        y_offset += line_height;
+        draw_text_outlined(start_x + 15, start_y + y_offset, "DOWN Arrow - Move Down", c_white);
+    }
 }
 
 // Reset text settings
