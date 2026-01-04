@@ -11,6 +11,7 @@
     {"id":{"name":"snd_bounce","path":"sounds/snd_bounce/snd_bounce.yy",},"order":0,},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"order":0,},
     {"id":{"name":"scr_gamerules","path":"scripts/scr_gamerules/scr_gamerules.yy",},"order":0,},
+    {"id":{"name":"scr_is_mobile","path":"scripts/scr_is_mobile/scr_is_mobile.yy",},"order":1,},
     {"id":{"name":"shd_ball_glow","path":"shaders/shd_ball_glow/shd_ball_glow.yy",},"order":0,},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":6,},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},"order":1,},
